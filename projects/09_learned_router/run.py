@@ -48,7 +48,9 @@ DEPTH = 20
 POOL = 50
 
 _CAPS = re.compile(r"\b[A-Z][\w'’-]+(?:\s+[A-Z][\w'’-]+)*")
-_COMPARATIVE = re.compile(r"\b(\w+er|more|less|most|least|first|last|older|younger|earlier|later)\b")
+_COMPARATIVE = re.compile(
+    r"\b(\w+er|more|less|most|least|first|last|older|younger|earlier|later)\b"
+)
 
 
 def features(question: str) -> list[float]:
@@ -108,7 +110,10 @@ def score_router(predictions: list[bool], truth: list[bool]) -> dict:
         "recall": round(rec, 4),
         "f1": round(2 * prec * rec / (prec + rec), 4) if prec + rec else 0.0,
         "accuracy": round((tp + tn) / len(truth), 4),
-        "tp": tp, "fp": fp, "fn": fn, "tn": tn,
+        "tp": tp,
+        "fp": fp,
+        "fn": fn,
+        "tn": tn,
     }
 
 
