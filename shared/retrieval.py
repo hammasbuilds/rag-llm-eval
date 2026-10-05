@@ -2,7 +2,7 @@
 
 BM25 is implemented here rather than imported. It is forty lines, it removes a
 dependency from the sparse half of every experiment in this repo, and -- since
-nlp-lab measured BM25 landing within 8 points of a pretrained neural embedding
+nlp-llm-ml measured BM25 landing within 8 points of a pretrained neural embedding
 for a fraction of the indexing cost -- it is the baseline every variant in this
 lab has to beat. A baseline worth taking seriously is worth owning.
 

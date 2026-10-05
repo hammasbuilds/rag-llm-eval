@@ -1,4 +1,4 @@
-"""Tests for rag-lab.
+"""Tests for rag-llm-eval.
 
 Every conclusion in this repo is a number produced by `metrics.py` over rankings
 produced by `retrieval.py`. Both are worth testing on cases where the right

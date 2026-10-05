@@ -1,4 +1,4 @@
-<h1 align="center">rag-lab (NumPy · sentence-transformers · HuggingFace Datasets)</h1>
+<h1 align="center">rag-llm-eval (NumPy · sentence-transformers · HuggingFace Datasets)</h1>
 <p align="center"><i>Nine RAG techniques measured as retrieval, on one real corpus, with almost no language model in the loop</i></p>
 
 <p align="center">
@@ -77,7 +77,7 @@ report the flattering number.
 | Dense (`bge-small-en-v1.5`) | **0.928** | 0.891 | 0.792 | 23.4s |
 | **Hybrid, RRF fused** | 0.891 | **0.905** | **0.813** | 28.7s |
 
-⚠️ **This contradicts [nlp-lab](https://github.com/hammasbuilds/nlp-lab)**, where BM25 landed
+⚠️ **This contradicts [nlp-llm-ml](https://github.com/hammasbuilds/nlp-llm-ml)**, where BM25 landed
 within 8 points of a pretrained embedding. Here dense wins by **15 points** on
 answerable@10 — because HotpotQA asks paraphrased questions, not keyword
 lookups. Neither result is wrong, which is the argument for measuring on your own
